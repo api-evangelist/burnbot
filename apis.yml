@@ -1,7 +1,30 @@
 aid: burnbot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/burnbot.png
 name: Burnbot
-description: Burnbot is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Burnbot is a wildfire mitigation and fuels management company that builds
+  autonomous, remotely-operated machines and delivers field services to reduce
+  hazardous vegetation and conduct controlled, precision fuel-reduction burns.
+  Its equipment operates in steep, remote, and hazardous terrain around the
+  clock in most weather conditions, cutting fuel loads without disturbing
+  healthy vegetation or compacting soil, and is used across fire hazard
+  mitigation, systematic fuels management, and timber operations. Burnbot works
+  with utilities, transportation agencies, land managers, and tribal
+  governments including PG&E, Caltrans, the U.S. Forest Service, and CAL FIRE.
+  Burnbot was surfaced as a portfolio company of DCVC and added to the API
+  Evangelist network. It is a hardware and field-services company with no public
+  developer API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/burnbot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Wildfire Mitigation
+- Fuels Management
+- Robotics
+- Autonomous Machines
+- Climate
+- Forestry
+- Timber Operations
+- Field Services
 apis: []
+common:
+- type: DomainSecurity
+  url: security/burnbot-domain-security.yml
+- type: Website
+  url: https://burnbot.com
+- type: PrivacyPolicy
+  url: https://burnbot.com/privacy-policy/
+- type: TermsOfService
+  url: https://burnbot.com/terms-of-service/
+- type: Support
+  url: https://burnbot.com/contact/
+- type: Careers
+  url: https://burnbot.com/careers
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
